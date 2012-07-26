@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>@EXTENSION_CATEGORY@</category>
+  <title>@EXTENSION_NAME@</title>
+  <description>@EXTENSION_DESCRIPTION@</description>
+  <version>@EXTENSION_MAJOR_VERSION@.@EXTENSION_MINOR_VERSION@.@EXTENSION_PATCH_VERSION@-@EXTENSION_STATUS@</version>
+  <documentation-url>@EXTENSION_HOMEPAGE@</documentation-url>
+  <license>@EXTENSION_LICENSE_SHORT_DESCRIPTION@</license>
+  <contributor>@EXTENSION_CONTRIBUTORS@</contributor>
+  <acknowledgements>@EXTENSION_ACKNOWLEDGEMENTS@</acknowledgements>
+  <parameters>
+    <label>IO</label>
+    <description>Input/output parameters</description>
+    <image>
+      <name>inputImageName</name>
+      <label>Input MR Image</label>
+      <channel>input</channel>
+      <index>0</index>
+      <description><![CDATA[MR Image]]></description>
+    </image>
+    <image type="label">
+      <name>inputLabelImageName</name>
+      <label>Input Label Image</label>
+      <channel>input</channel>
+      <index>1</index>
+      <description><![CDATA[Input label image has one slice of template as label 1, then one island (of a different label) for a needle]]></description>
+    </image>
+    <geometry>
+      <name>outputVtkName</name>
+      <label>Output Needle Model</label>
+      <channel>output</channel>
+      <index>2</index>
+      <description><![CDATA[Output that contains geometry model.]]></description>
+    </geometry>
+  </parameters>
+
+</executable>
